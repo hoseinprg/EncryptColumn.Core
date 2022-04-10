@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<PackOnBuild>true</PackOnBuild>
+		<PackageVersion>1.0</PackageVersion>
+		<Authors>Hussein NM</Authors>
+		<PackageIconUrl>https://github.com/hoseinprg/EncryptColumn.Core/raw/main/EncryptColumn.Core/icon-pk.png</PackageIconUrl>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<Owners>Hussein NM</Owners>
+		<PackageProjectUrl>https://github.com/hoseinprg/EncryptColumn.Core</PackageProjectUrl>
+		<Summary>Encrypt &amp; Decrypt your databases columns using EntityFramework Core.</Summary>
+		<PackageTags>entityframeworkcore, encryption, encrypt sql, encrypt column, entityframework, encryptcolumn, core</PackageTags>
+		<Title>EncryptColumn.Core</Title>
+		<Description>Use EncryptColumn attribute and your database columns encrtypted. Automatic encrypt and decrypt your columns.</Description>
+		<PackageId>EncryptColumn.Core</PackageId>
+		<PackageIcon>icon-pk.png</PackageIcon>
+		<RepositoryUrl>https://github.com/hoseinprg/EncryptColumn.Core</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+		<None Include="..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="icon-pk.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+</Project>
